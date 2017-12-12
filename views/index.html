@@ -3,7 +3,9 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/stylesheets/首页.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+
+    
   </head>
   <body>
     <divdiv class ='nav clearfix'>
@@ -14,7 +16,7 @@
         <spam class="nav-center-name fr">Franco Zhang</spam>
       </div>
     <div>
-    <div class="content">
+    <div class="content clearfix">
       <div class="content-aside fl">
         <ul>
           <li><i>ha</i><a href="#">Home</a></li>
@@ -58,33 +60,46 @@
                 </tr>
                 <tr>
                   <td>Metals Lots</td>
-                  <td>150</td>
-                  <td>150</td>
-                  <td>150</td>
+                  <td>150k</td>
+                  <td>150k</td>
+                  <td>150k</td>
                 </tr>
                 <tr>
                   <td>U PNL</td>
-                  <td>150</td>
-                  <td>150</td>
-                  <td>150</td>
+                  <td>150k</td>
+                  <td>150k</td>
+                  <td>150k</td>
                 </tr>
                 <tr>
                   <td>Realized PNL</td>
-                  <td>150</td>
-                  <td>150</td>
-                  <td>150</td>
+                  <td>150k</td>
+                  <td>150k</td>
+                  <td>150k</td>
                 </tr>
                 <tr>
                   <td>Gross PNL</td>
-                  <td>150</td>
-                  <td>150</td>
-                  <td>150</td>
+                  <td>150k</td>
+                  <td>150k</td>
+                  <td>150k</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+        <div class="charts">
+          <div class="charts-left">
+            <div id="charts-left" class='fl'>
+          </div>
+          </div>
+          <div class="charts-right">
+            <div id="charts-right" class='fr'></div>
+          </div>
+          
+        </div>
       </div>
     </div>
+    <script src='/javascripts/jquery-1.10.2.min.js'></script>
+    <script src='/javascripts/echarts.min.js'></script>
+    <script src='/javascripts/home.js'></script>
   </body>
 </html>
