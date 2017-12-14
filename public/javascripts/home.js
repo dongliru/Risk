@@ -64,5 +64,14 @@ $(function () {
     };
     myChart.setOption(option);
     myChart2.setOption(option);
+      
+    var home = {
+        leftNavScale:function(){
+
+        }
+    }
+    $('.nav-left').click(function(){
+        $('.content-aside').animate('width',"300px");
+    })
 
 })
