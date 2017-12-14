@@ -1,5 +1,5 @@
 body,html {
-    width: 100%;
+    min-width: 1366px;
     height: 100%;
 }
 .nav {
@@ -14,8 +14,16 @@ body,html {
 .nav-left {
     margin-left: 15px;
     margin-right: 25px;
+    width: 18px;    
+    height: 14px;
+    background: url('../images/header_image/header_btn_icon.jpg');
+    margin-top:17px;
 }
-
+/* .nav-left:hover {
+    width: 18px;
+    height: 14px;
+    background: url('../images/header_image/header_btn_icon.png') ;
+} */
 .nav-center {
     width: 100%;
     margin-right: 100px;
@@ -24,6 +32,10 @@ body,html {
 .nav-right {
     margin-right: 20px;
     margin-left: 25px;
+    width: 32px;
+    height: 32px;
+    background: url('../images/header_image/header_head_icon.jpg');
+    margin-top:8px;
 }
 
 .content {
@@ -44,7 +56,18 @@ body,html {
     height: 45px;
     border-left: 2px solid transparent;
 }
-
+.content-aside>ul>li:first-child i {
+    width: 20px;
+    height: 16px;
+    background: url('../images/siderbar/icon_home.png');
+    display: inline-block;
+}
+.content-aside>ul>li:ntn-child(2) i {
+    width: 16px;
+    height: 16px;
+    background: url('../images/siderbar/icon_dollor.png');
+    display: inline-block;
+}
 .content-aside li a {
     color: white;
     text-decoration: none;

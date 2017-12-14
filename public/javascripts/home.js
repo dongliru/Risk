@@ -19,7 +19,6 @@ $(function () {
         },
         xAxis: [{
             type: 'value',
-            show: false,
             boundaryGap: [0, 0.01],
             splitLine: {
                 show: false, //不显示分割线         
