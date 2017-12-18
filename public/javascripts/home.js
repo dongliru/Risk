@@ -64,14 +64,49 @@ $(function () {
     };
     myChart.setOption(option);
     myChart2.setOption(option);
-      
-    var home = {
-        leftNavScale:function(){
 
+    var home = {
+        navLeft: $('.nav-left'),
+        contentAside: $('.content-aside'),
+        contentPrimary: $('.content-primary'),
+        navCenterName: $(".nav-center-name"),
+        language: $('.language'),
+        admin: $('.admin'),
+        leftNavToggle: function () {
+            if (home.contentAside.width() > 100) {
+                home.contentAside.animate({
+                    'width': "50px"
+                });
+                home.contentPrimary.animate({
+                    'width': "1469.2px"
+                })
+            } else {
+                home.contentAside.animate({
+                    'width': "230px"
+                });
+                home.contentPrimary.animate({
+                    'width': "1289.2px"
+                })
+            }
+
+        },
+        elementShow: function (el) {
+            el.addClass('show');
+        },
+        elementHide: function (el) {
+            el.addClass('hide');
         }
     }
-    $('.nav-left').click(function(){
-        $('.content-aside').animate('width',"300px");
+    home.navLeft.click(function () {
+        home.leftNavToggle();
     })
-
+    home.navCenterName.click(function () {
+        home.elementShow(home.admin)
+    })
+    $('.nav-center-name .languageToggle').mouseover(function () {
+        home.elementShow(home.language);
+    })
+    // $('document').click(function(){
+    //     home.elementHide($("document"));
+    // })
 })
