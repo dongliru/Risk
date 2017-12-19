@@ -1,9 +1,11 @@
+/* 设置整屏显示 */
 body,
 html {
     min-width: 1366px;
     height: 100%;
 }
-
+/* 设置整屏显示 */
+/* nav部分开始 */
 .nav {
     width: 100%;
     height: 48px;
@@ -90,6 +92,8 @@ html {
 .languageToggle {
     position:relative;
 }
+/* nav部分结束 */
+/* content部分开始 */
 .content {
     height: calc(100%-48px);
 }
@@ -167,7 +171,10 @@ html {
     height: 16px;
     background: url('../images/siderbar/icon_analysis.png') no-repeat;
 }
-
+.content-aside .sub-nav {
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
 .content-aside .sub-nav li a {
     /* margin-left:12px; */
     margin-left: -36px;
@@ -184,10 +191,10 @@ html {
 }
 
 
-/* .content-aside li:hover {
+ .content-aside li:hover {
     background: #3a81f8;
     border-left: 2px solid white;
-} */
+} 
 
 .content-primary {
     background: #f2f7fa;
@@ -198,6 +205,7 @@ html {
 .content-primary-title {
     height: 50px;
     color: #888888;
+    line-height: 50px;
 }
 
 .content-primary-title b {
@@ -260,4 +268,6 @@ html {
     margin-left: 20px;
     border-bottom: 1px solid #ccc;
     margin-right: 20px;
+    margin-top:20px;
 }
+/* content部分结束 */

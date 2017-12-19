@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,7 +7,7 @@
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="/stylesheets/common.css">
-  <link rel="stylesheet" href="/stylesheets/home.css">
+  <link rel="stylesheet" href="/stylesheets/netPositionSummary.css">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
         <li><i></i><a href="#">Home</a></li>
         <li><i></i><a href="#">Position Keeper</a><b></b>
           <ul class='sub-nav hide'>
-            <li><i></i> <a href="/netPositionSummary">Net Position Sunmmary</a></li>
+            <li><i></i> <a href="#">Net Position Sunmmary</a></li>
           </ul>
         </li>
         <li><i></i><a href="#">Risk Monitor</a><b></b>
@@ -62,80 +62,23 @@
     </div>
     <div class="content-primary">
       <div class="content-primary-title">
-        <b>Home</b>/Sumary
+        <b>Home</b>/Position Keeper/Net Position Summary
       </div>
       <!-- 表格部分 -->
-      <div class="content-primary-table">
-        <div class="table-title">
-          Global Sumary
+      <div class="content-primary-top">
+        <div class='charts-left'>
+            <div id='chatrs-circle'></div>
         </div>
-        <div class="table-content">
-          <table>
-            <thead>
-              <th></th>
-              <th>Today</th>
-              <th>Current Week</th>
-              <th>Current Month</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>FX Vloumn Lots</td>
-                <td>150</td>
-                <td>150</td>
-                <td>150</td>
-              </tr>
-              <tr>
-                <td>CFD Lots</td>
-                <td>150</td>
-                <td>150</td>
-                <td>150</td>
-              </tr>
-              <tr>
-                <td>Metals Lots</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-              <tr>
-                <td>U PNL</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-              <tr>
-                <td>Realized PNL</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-              <tr>
-                <td>Gross PNL</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <div class='charts-right'></div>
+        
       </div>
       <!-- 柱状图部分 -->
-      <div class="charts">
-        <div class="charts-left">
-          <div class="charts-title">Best Traders TOP 5</div>
-          <div id="charts-left" class='fl'>
-          </div>
-        </div>
-        <div class="charts-right">
-          <div class="charts-title">Best Traders TOP 5</div>
-          <div id="charts-right" class='fr'></div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- content部分结束 -->
   <script src='/javascripts/jquery-1.10.2.min.js'></script>
   <script src='/javascripts/echarts.min.js'></script>
-  <script src='/javascripts/home.js'></script>
+  <script src='/javascripts/netPositionSummary.js'></script>
 </body>
 
 </html>
