@@ -109,6 +109,7 @@ html {
     overflow: hidden;
     border-left: 2px solid transparent;
     padding:15px 0;
+    white-space:nowrap;
 }
 
 .content-aside>ul>li i {
@@ -186,7 +187,7 @@ html {
 }
 
 .content-aside li i {
-    margin-left: 18px;
+    margin-left: 10px;
     margin-right: 18px;
 }
 
@@ -199,6 +200,7 @@ html {
 .content-primary {
     background: #f2f7fa;
     width: calc(100% - 230px);
+    height:calc(100% - 48px);
     float: right;
 }
 
@@ -224,6 +226,8 @@ html {
 .content-primary-table .table-title {
     margin-left: 18px;
     color: black;
+    height: 50px;
+    line-height: 50px;
 }
 
 .content-primary-table .table-content table {
@@ -258,7 +262,6 @@ html {
     float: left;
     background: white;
     margin-left: 18px;
-    margin-top: 18px;
 }
 
 .charts-left .charts-title,

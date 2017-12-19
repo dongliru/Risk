@@ -1,0 +1,19 @@
+.content-primary-table .table-content th {
+    width: 15%;
+}
+.add button{
+    background: #3a81f8;
+    color:white;
+    border:none;
+    height: 30px;
+    width: 56px;
+    margin-left:18px;
+    margin-bottom:10px;
+}
+.content-primary-table {
+    height: auto;
+    padding-bottom:10px;
+}
+.second {
+    margin-top:15px;
+}

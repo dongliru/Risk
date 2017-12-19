@@ -1,5 +1,48 @@
-#chatrs-circle {
+.charts-left,.charts-right {
+    height: 364px;  
+}
+#charts-circle {
     width: 90%;
-    height: 260px;
-    margin-top:-40px;
+    height: 314px;
+    margin-left:20px;
+    margin-top:10px;
+}
+.summarytable-title {
+    margin-left:10px;
+    margin-top:10px;
+}
+.content-primary-table {
+    height: 285px;
+    margin-top:10px;
+}
+.content-primary-table .table-title {
+    height: 35px;
+    line-height: 35px;
+}
+.search {
+    margin-bottom:10px;
+}
+.search select {
+    width: 124px;
+    height: 30px;
+    border-radius: 2px;
+    margin-left:18px;
+    margin-right:10px;
+}
+.search input {
+    width: 230px;
+    height: 28px;
+    border-radius: 2px;
+    outline:none;
+    border:none;
+    border:1px solid #cccccc;
+    margin-right:20px;
+}
+.search button {
+    background: #3a81f8;
+    color:white;
+    border:none;
+    height: 30px;
+    width: 56px;
+    border-radius: 2px;
 }

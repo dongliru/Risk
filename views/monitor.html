@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,7 +7,7 @@
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="/stylesheets/common.css">
-  <link rel="stylesheet" href="/stylesheets/home.css">
+  <link rel="stylesheet" href="/stylesheets/monitor.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
   <div class="content clearfix">
     <div class="content-aside fl">
       <ul>
-        <li><i></i><a href="#">Home</a></li>
+        <li><i></i><a href="/">Home</a></li>
         <li><i></i><a href="#">Position Keeper</a><b></b>
           <ul class='sub-nav hide'>
             <li><i></i> <a href="/netPositionSummary">Net Position Sunmmary</a></li>
@@ -48,8 +48,8 @@
         </li>
         <li><i></i><a href="#">Risk Monitor</a><b></b>
           <ul class='sub-nav hide'>
-            <li><i></i> <a href="#">Price Alarm</a></li>
-            <li><i></i> <a href="#">DC Monitor</a></li>
+            <li><i></i> <a href="/priceAlarm">Price Alarm</a></li>
+            <li><i></i> <a href="/monitor">DC Monitor</a></li>
             <li><i></i> <a href="#">Lock position alarm</a></li>
             <li><i></i> <a href="#">Partial Lock Risk alert</a></li>
           </ul>
@@ -67,75 +67,77 @@
       <!-- 表格部分 -->
       <div class="content-primary-table">
         <div class="table-title">
-          Global Sumary
+          DC Monitor
+        </div>
+        <div class='add'>
+            <button type="">添加</button>
         </div>
         <div class="table-content">
           <table>
             <thead>
-              <th></th>
-              <th>Today</th>
-              <th>Current Week</th>
-              <th>Current Month</th>
+              <th>Server</th>
+              <th>名称</th>
+              <th>IP</th>
+              <th>IP</th>
+              <th>状态</th>
+              <th>类型</th>
+              <th>设置</th>
             </thead>
             <tbody>
               <tr>
-                <td>FX Vloumn Lots</td>
+                <td>xxx</td>
+                <td>150</td>
+                <td>150</td>
+                <td>150</td>
                 <td>150</td>
                 <td>150</td>
                 <td>150</td>
               </tr>
               <tr>
-                <td>CFD Lots</td>
+                <td>xxx</td>
                 <td>150</td>
                 <td>150</td>
                 <td>150</td>
-              </tr>
-              <tr>
-                <td>Metals Lots</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-              <tr>
-                <td>U PNL</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-              <tr>
-                <td>Realized PNL</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
-              </tr>
-              <tr>
-                <td>Gross PNL</td>
-                <td>150k</td>
-                <td>150k</td>
-                <td>150k</td>
+                <td>150</td>
+                <td>150</td>
+                <td>150</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <!-- 柱状图部分 -->
-      <div class="charts">
-        <div class="charts-left">
-          <div class="charts-title">Best Traders TOP 5</div>
-          <div id="charts-left" class='fl'>
-          </div>
+      <div class="content-primary-table second">
+        <div class="table-title">
+          DC Monitor
         </div>
-        <div class="charts-right">
-          <div class="charts-title">Best Traders TOP 5</div>
-          <div id="charts-right" class='fr'></div>
+        <div class="table-content">
+          <table>
+            <thead>
+              <th>Server</th>
+              <th>名称</th>
+              <th>IP</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>xxx</td>
+                <td>150</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>xxx</td>
+                <td>150</td>
+                <td>150</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
   <!-- content部分结束 -->
   <script src='/javascripts/jquery-1.10.2.min.js'></script>
-  <script src='/javascripts/echarts.min.js'></script>
-  <script src='/javascripts/home.js'></script>
+  <script src='/javascripts/common.js'></script>
+  <!-- <script src='/javascripts/monitor.js'></script> -->
 </body>
 
 </html>

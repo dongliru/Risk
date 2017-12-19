@@ -2,11 +2,6 @@ $(function () {
     // 饼图展示
     var circleChart = echarts.init(document.getElementById('charts-circle'));
     option = {
-        title: {
-            text: '某站点用户访问来源',
-            subtext: '纯属虚构',
-            x: 'center'
-        },
         tooltip: {
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
