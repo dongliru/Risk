@@ -1,4 +1,5 @@
 var home = {
+    // 缓存DOM元素
         navLeft: $('.nav-left'),
         contentAside: $('.content-aside'),
         contentPrimary: $('.content-primary'),
@@ -71,11 +72,3 @@ var home = {
         }
 
     })
-
-    // $(".content-aside li").mouseover(function () {
-    //     $(this).css({
-    //         "background":"#3a81f8",       
-    //         "border-left": "2px solid white"
-    //     })
-    //     $(this)
-    // })
