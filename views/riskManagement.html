@@ -5,9 +5,11 @@
     <title>
         <%= title %>
     </title>
+    <link rel="stylesheet" href="/javascripts/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="/stylesheets/common.css">
-    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/netPositionSummary.css">
+    <link rel="stylesheet" href="/stylesheets/riskManagement.css">
 </head>
 
 <body>
@@ -67,20 +69,27 @@
             <!-- 表格部分 -->
             <div class="content-primary-table">
                 <div class="table-title">
-                    Price Alarm
+                    Scalper Report
+                </div>
+                <div class='search'>
+                    选择时间
+                    <input type="" name="" value="">
+                    <input type="" name="" value="">
                 </div>
                 <div class="table-content">
                     <table>
                         <thead>
-                            <th>Symbal</th>
-                            <th>Bid</th>
-                            <th>Ask</th>
-                            <th>Spit</th>
+                            <th></th>
+                            <th>Today</th>
+                            <th>Current Week</th>
+                            <th>Current Month</th>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>FX Vloumn Lots</td>
-                                <td colspan="3">150</td>
+                                <td>150</td>
+                                <td>150</td>
+                                <td>150</td>
                             </tr>
                             <tr>
                                 <td>CFD Lots</td>
@@ -100,35 +109,35 @@
                                 <td>150k</td>
                                 <td>150k</td>
                             </tr>
-                            <tr>
-                                <td>Realized PNL</td>
-                                <td>150k</td>
-                                <td>150k</td>
-                                <td>150k</td>
-                            </tr>
-                            <tr>
-                                <td>Gross PNL</td>
-                                <td>150k</td>
-                                <td>150k</td>
-                                <td>150k</td>
-                            </tr>
-                            <tr>
-                                <td>Gross PNL</td>
-                                <td>150k</td>
-                                <td>150k</td>
-                                <td>150k</td>
-                            </tr>
                         </tbody>
                     </table>
+                </div>
+                <div aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class='active'><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- content部分结束 -->
     <script src='/javascripts/jquery-1.10.2.min.js'></script>
-    <script src='/javascripts/echarts.min.js'></script>
+    <script src='/javascripts/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
     <script src='/javascripts/common.js'></script>
-    <script src='/javascripts/home.js'></script>
 </body>
 
 </html>

@@ -22,4 +22,34 @@ router.get('/', function (req, res, next) {
       title: "monitor"
     })
   })
+  .get('/lockPositionAlarm', function (req, res, next) {
+    res.render('lockPositionAlarm', {
+      title: 'lockPositionAlarm'
+    })
+  })
+ .get('/partialLockRisk', function (req, res, next) {
+    res.render('partialLockRisk', {
+      title: 'partialLockRisk'
+    })
+  })
+  .get('/marginControl', function (req, res, next) {
+    res.render('marginControl', {
+      title: 'marginControl'
+    })
+  })
+  .get('/riskManagement', function (req, res, next) {
+    res.render('riskManagement', {
+      title: 'riskManagement'
+    })
+  })
+  .get('/capitalStatement', function (req, res, next) {
+    res.render('capitalStatement', {
+      title: 'capitalStatement'
+    })
+  })
+  .get('/transactionAnalysis', function (req, res, next) {
+    res.render('transactionAnalysis', {
+      title: 'transactionAnalysis'
+    })
+  })
 module.exports = router;
