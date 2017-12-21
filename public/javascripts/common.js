@@ -62,20 +62,20 @@ home.contentPrimary.click(function () {
     home.elementHide(home.admin);
 })
 // 左侧导航点击切换二级标题的显示和隐藏
-$('.content-aside>ul>li>b').click(function () {
+$('.content-aside>ul>li>a>b').click(function () {
     if ($(this).width() < 10) {
         $(this).css({
             'background': "url('../images/siderbar/icon_arrow_down.png')",
             "width": "11px",
             "height": "7px"
         })
-        home.elementShow($(this).siblings('ul'));
+        home.elementShow($(this).parent('a').siblings('ul'));
     } else {
         $(this).css({
             'background': "url('../images/siderbar/icon_arrow_right.png')",
             "width": "7px",
             "height": "11px"
         })
-        home.elementHide($(this).siblings('ul'))
+        home.elementHide($(this).parent('a').siblings('ul'))
     }
 })

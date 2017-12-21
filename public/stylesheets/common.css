@@ -105,13 +105,14 @@ html {
     overflow: hidden;
     padding-top:10px;
 }
-.content-aside li {
+.content-aside li a{
     overflow: hidden;
     border-left: 2px solid transparent;
-    padding:15px 0;
     white-space:nowrap;
 }
-
+.sub-nav {
+    margin-top:0px;
+}
 .content-aside>ul>li i {
     display: inline-block;
     width: 50px;
@@ -121,7 +122,7 @@ html {
     position: relative;
 }
 
-.content-aside>ul>li>b {
+.content-aside>ul>li>a>b {
     position: absolute;
     left: 200px;
     top: 21px;
@@ -131,51 +132,48 @@ html {
     display: inline-block;
 }
 
-.content-aside>ul>li:first-child i {
+.content-aside>ul>li:first-child a i {
     width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_home.png');
 }
 
-.content-aside>ul>li:nth-child(2)>i {
+.content-aside>ul>li:nth-child(2)>a>i {
     width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_dollor.png') no-repeat;
 }
 
-.content-aside>ul>li:nth-child(3)>i {
+.content-aside>ul>li:nth-child(3)>a>i {
     width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_computer.png') no-repeat;
 }
 
-.content-aside>ul>li:nth-child(4)>i {
+.content-aside>ul>li:nth-child(4)>a>i {
     width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_commission.png') no-repeat;
 }
 
-.content-aside>ul>li:nth-child(5)>i {
+.content-aside>ul>li:nth-child(5)>a>i {
      width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_manage.png') no-repeat;
 }
 
-.content-aside>ul>li:nth-child(6)>i {
+.content-aside>ul>li:nth-child(6)>a>i {
      width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_state.png') no-repeat;
 }
 
-.content-aside>ul>li:nth-child(7)>i {
+.content-aside>ul>li:nth-child(7)>a>i {
      width: 20px;
     height: 16px;
     background: url('../images/siderbar/icon_analysis.png') no-repeat;
 }
-.content-aside .sub-nav {
-    margin-top: 15px;
-    margin-bottom: -20px;
-}
+
 .content-aside .sub-nav li a {
     /* margin-left:12px; */
     margin-left: -36px;
@@ -184,15 +182,17 @@ html {
 .content-aside li a {
     color: white;
     text-decoration: none;
+    display:block;
+    padding:15px 0;
 }
 
-.content-aside li i {
-    margin-left: 10px;
+.content-aside li a i {
+    margin-left: 14px;
     margin-right: 18px;
 }
 
 
- .content-aside li:hover {
+ .content-aside li a:hover {
     background: #3a81f8;
     border-left: 2px solid white;
 } 
