@@ -22,14 +22,12 @@ var home = {
                 'width': "1469.2px"
             })
         } else {
-
             home.contentAside.animate({
                 'width': "230px"
             });
             home.contentPrimary.animate({
                 'width': "1289.2px"
             })
-
         }
 
     },
