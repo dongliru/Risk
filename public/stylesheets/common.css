@@ -225,6 +225,7 @@ html {
      width: calc(100vw - 230px); 
     height: calc(100vh - 48px);
     float: right;
+    overflow: hidden;
 
 }
 
@@ -241,8 +242,8 @@ html {
 }
 
 .content-primary-table {
-    width: calc(100%-230px);
-    height: 370px;
+    width: calc(100vw - 230px);
+     height: 370px; 
     background: white;
     margin: 0 17px;
 }
@@ -254,11 +255,15 @@ html {
     line-height: 50px;
 }
 
+.content-primary-table .table-content {
+    padding-bottom:15px;
+}
 .content-primary-table .table-content table {
     width: 97%;
     margin-left: 18px;
     margin-right: 18px;
     color: #444444;
+    
 }
 
 .content-primary-table .table-content thead {
@@ -273,7 +278,7 @@ html {
 }
 
 .content-primary-table .table-content td {
-    height: 38px;
+     height: 38px; 
     line-height: 36px;
     border: 1px solid #ccc;
     padding-left: 18px;
@@ -282,7 +287,7 @@ html {
 .charts-left,
 .charts-right {
     width: 48%;
-    height: 260px;
+     height: 260px; 
     float: left;
     background: white;
     margin-left: 18px;
